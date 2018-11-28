@@ -32,23 +32,46 @@
     flex-wrap: wrap;
     justify-content: space-around;
 
-    .select {
-        height: 100px;
-    }
-
     .select:hover {
         height: 150px;
     }
 }
 
+.select, #navicon {
+    height: 100px;
+}
+
+
+
+#navicon {
+    @media (max-width: 955px) {
+            height: 50px;
+    }
+}
+
+.container {
+    max-width: 60%;
+    margin-top: 35px;
+    margin-left: 60px;
+
+    .col {
+        position: relative;
+        padding-top: 8%;
+        border-style: solid;
+        border-color: lightgrey;
+        border-width: 0.5px;
+    }
+}
+
 nav {
+    position: fixed;
     height: 100%;
     float: right;
     border: ridge;
     border-width: 10px;
     padding: 10px;
     padding-right: 10px;
-    margin: 0px;
+    margin-top: -50%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -57,7 +80,7 @@ nav {
 
     li {
         list-style-type: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 }
-
-
