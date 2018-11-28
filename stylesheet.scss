@@ -1,0 +1,63 @@
+#guess {
+    font-family: Tahoma;
+    text-shadow: 5px;
+    font-display: fallback;
+    font-weight: bold;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    font-size: 50px;
+
+    @media (max-width: 1000px) {
+        font-size: 20px;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 55px;
+    }
+}
+
+#icons {
+    border: ridge;
+    border-width: 10px;
+    padding: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .select {
+        height: 100px;
+    }
+
+    .select:hover {
+        height: 150px;
+    }
+}
+
+nav {
+    height: 100%;
+    float: right;
+    border: ridge;
+    border-width: 10px;
+    padding: 10px;
+    padding-right: 10px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+
+    li {
+        list-style-type: none;
+    }
+}
+
+
