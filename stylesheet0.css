@@ -1,14 +1,16 @@
+#guess, table, form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
 #guess {
   font-family: Tahoma;
   text-shadow: 5px;
   font-display: fallback;
   font-weight: bold;
   margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
   font-size: 50px; }
   @media (max-width: 1000px) {
     #guess {
@@ -31,12 +33,7 @@
     height: 150px; }
 
 table {
-  margin-top: 180px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
+  margin-top: 180px; }
   table .heading {
     font-weight: bold;
     font-size: 15px; }
@@ -92,8 +89,20 @@ nav {
   animation-name: tored;
   animation-delay: 5s; }
 
+#dorngpix {
+  animation-name: todorng;
+  animation-delay: 5s; }
+
+#greypix {
+  animation-name: togrey;
+  animation-delay: 5s; }
+
 #bluepix {
   animation-name: toblue;
+  animation-delay: 10s; }
+
+#yellpix {
+  animation-name: toyell;
   animation-delay: 10s; }
 
 #blackpix {
@@ -102,6 +111,10 @@ nav {
 
 #brownpix {
   animation-name: tobrown;
+  animation-delay: 20s; }
+
+#orngpix {
+  animation-name: toorng;
   animation-delay: 20s; }
 
 #peachpix {
@@ -113,6 +126,16 @@ nav {
     background-color: white; }
   to {
     background-color: red; } }
+@keyframes todorng {
+  from {
+    background-color: white; }
+  to {
+    background-color: orangered; } }
+@keyframes togrey {
+  from {
+    background-color: white; }
+  to {
+    background-color: lightgrey; } }
 @keyframes toblue {
   from {
     background-color: white; }
@@ -133,10 +156,26 @@ nav {
     background-color: white; }
   to {
     background-color: peachpuff; } }
+@keyframes toyell {
+  from {
+    background-color: white; }
+  to {
+    background-color: yellow; } }
+@keyframes toorng {
+  from {
+    background-color: white; }
+  to {
+    background-color: orange; } }
 form {
-  float: right;
-  margin-top: -350px;
-  margin-right: 150px;
+  margin-top: 200px;
+  margin-left: 470px;
   font-size: 30px; }
+  @media (max-width: 1000px) {
+    form {
+      font-size: 15px;
+      margin-left: 150px; } }
+  @media (min-width: 1200px) {
+    form {
+      font-size: 30px; } }
 
 /*# sourceMappingURL=stylesheet0.css.map */
