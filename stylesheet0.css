@@ -30,6 +30,25 @@
   #icons .select:hover {
     height: 150px; }
 
+table {
+  margin-top: 180px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+  table .heading {
+    font-weight: bold;
+    font-size: 15px; }
+  table th {
+    color: red;
+    font-size: 20px; }
+  table th, table td {
+    padding: 10px; }
+
+.tableicons {
+  height: 50px; }
+
 .select, #navicon {
   height: 100px; }
 
@@ -46,7 +65,10 @@
     padding-top: 8%;
     border-style: solid;
     border-color: lightgrey;
-    border-width: 0.5px; }
+    border-width: 0.5px;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; }
 
 nav {
   position: fixed;
@@ -65,5 +87,56 @@ nav {
     list-style-type: none;
     padding-top: 10px;
     padding-bottom: 10px; }
+
+#redpix {
+  animation-name: tored;
+  animation-delay: 5s; }
+
+#bluepix {
+  animation-name: toblue;
+  animation-delay: 10s; }
+
+#blackpix {
+  animation-name: toblack;
+  animation-delay: 15s; }
+
+#brownpix {
+  animation-name: tobrown;
+  animation-delay: 20s; }
+
+#peachpix {
+  animation-name: topeach;
+  animation-delay: 25s; }
+
+@keyframes tored {
+  from {
+    background-color: white; }
+  to {
+    background-color: red; } }
+@keyframes toblue {
+  from {
+    background-color: white; }
+  to {
+    background-color: blue; } }
+@keyframes toblack {
+  from {
+    background-color: white; }
+  to {
+    background-color: black; } }
+@keyframes tobrown {
+  from {
+    background-color: white; }
+  to {
+    background-color: saddlebrown; } }
+@keyframes topeach {
+  from {
+    background-color: white; }
+  to {
+    background-color: peachpuff; } }
+form {
+  float: right;
+  margin-top: -350px;
+  margin-right: 150px;
+  font-size: 30px; }
 
 /*# sourceMappingURL=stylesheet0.css.map */
